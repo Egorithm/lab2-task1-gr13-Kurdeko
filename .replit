@@ -1,5 +1,5 @@
 language = "c"
-run = "gcc -o labrabota2-1 /home/runner/lab2-task1-gr13-Kurdeko/src/main.c"
+run = "mkdir -p bin && gcc -o bin/labrabota2-1 src/main.c && ./bin/labrabota2-1 5"
 [nix]
 channel = "stable-25_05"
 
