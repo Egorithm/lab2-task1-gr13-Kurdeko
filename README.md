@@ -10,8 +10,33 @@ The configuration in the `.replit` file is preset to execute the binary with a s
 
 # Building
 The project is built using the **GCC** compiler.
-* **Source file:** `src/main.c` 
-* **Output binary:** `bin/labrabota2-1`
-* **Build command:** `gcc -o bin/labrabota2-1 src/main.c` 
+* **Source file:** `src/main.c`
+* **Output binary:** `labrabota2-1`
+* **Build command:**
+  ```sh
+  gcc -o labrabota2-1 src/main.c
+  ```
 
 The binary file is excluded from version control via the `.gitignore` file to ensure clean repository management.
+
+# Running
+After building, run the program by passing the desired array size as a command-line argument:
+
+```sh
+./labrabota2-1 <array_size>
+```
+
+Example:
+
+```sh
+./labrabota2-1 10
+```
+
+This will generate an array of 10 random numbers and print, for each one, the largest value obtainable by rearranging its digits.
+
+## Running on Replit
+The `.replit` file is configured to compile and run the program in one step. Simply press the **Run** button, or from the Shell tab execute:
+
+```sh
+gcc -o labrabota2-1 src/main.c && ./labrabota2-1 10
+```
